@@ -6,7 +6,7 @@
 ![imagemreadme](https://github.com/vinniciusrodrigues99/Pomodoso_Inverso/blob/main/imagens/tela02.png)
 ![imagemreadme](https://github.com/vinniciusrodrigues99/Pomodoso_Inverso/blob/main/imagens/tela02pt2.png)
 ### Descrição: 
-Pomodoro Invertido para aqueles que trabalham cinco minutos e descansam por vinte e cinco minutos. Escolhi figuras do futebol para fazerem referência aos eventos do Pomodoro. 
+Pomodoro Invertido para aqueles que trabalham cinco minutos e descansam por vinte e cinco minutos. Escolhi figuras do futebol para fazerem referência aos eventos do Pomodoro. Página criada com o intuíto de melhorar as minhas habilidades com o JavaScript. 
 <ul>
 <li>Reus: Sempre focado independente de qualquer obstáculo e seja qual for a situação. Nunca desiste do objetivo!
 </li>
@@ -17,7 +17,6 @@ Paulo Henrique Ganso: Costuma dormir por um longo período dentro de campo, fico
 </li>
 </ul>
 
-- Página realizada com o intuíto de melhorar as minhas habilidades com o JavaScript. 
 ### Ferramentas utilizadas:
 * HTML
 
