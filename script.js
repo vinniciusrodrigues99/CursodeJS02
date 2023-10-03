@@ -10,7 +10,7 @@
     const temporizador = document.getElementById('timer');
     const musicaFocoInput = document.getElementById('alternar-musica');
     const musica = new Audio('./sons/luna-rise-part-one.mp3');
-    let tempoCorridoEmSegundos = 1500;
+    let tempoCorridoEmSegundos = 600;
     const startPauseBt = document.getElementById('start-pause');
     let intervaloId = null;
     musica.loop = true;
@@ -31,21 +31,21 @@
     {
     //  html.setAttribute('data-contexto', 'foco');
         //banner.setAttribute('src', './imagens/foco.png');
-        tempoCorridoEmSegundos = 1500;
+        tempoCorridoEmSegundos = 600;
         alterarContexto('foco');
         focoBt.classList.add('active')
     });
     curtoBt.addEventListener('click', ()=>{
     //  html.setAttribute('data-contexto', 'descanso-curto');
     // banner.setAttribute('src', './imagens/descanso-curto.png');
-        tempoCorridoEmSegundos = 5 * 60;
+        tempoCorridoEmSegundos = 15 * 60;
         alterarContexto('descanso-curto');
         curtoBt.classList.add('active');
     });
     longoBt.addEventListener('click', function(){
         // html.setAttribute('data-contexto', 'descanso-longo');
         // banner.setAttribute('src', './imagens/descanso-longo.png');
-        tempoCorridoEmSegundos = 15*60; 
+        tempoCorridoEmSegundos = 30*60; 
         alterarContexto('descanso-longo');
         longoBt.classList.add('active');
     });
