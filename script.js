@@ -5,6 +5,7 @@ const longoBt = document.querySelector('.app__card-button--longo');
 const banner = document.querySelector('.app__image'); //variável para pegar o seletor que possui a classe ".app__image"
 const titulo = document.querySelector('.app__title');
 const botoes = document.querySelectorAll('.app__card-button');
+const iniciarOuPausarBt = document.querySelector('span');
 const musicaFocoInput = document.getElementById('alternar-musica');
 const musica = new Audio('./sons/luna-rise-part-one.mp3');
 let tempoCorridoEmSegundos = 5;
@@ -43,6 +44,7 @@ longoBt.addEventListener('click', function(){
     alterarContexto('descanso-longo');
     longoBt.classList.add('active');
 });
+
 function alterarContexto(contexto){
     botoes.forEach(function (contexto){
         contexto.classList.remove('active');
@@ -68,34 +70,49 @@ function alterarContexto(contexto){
             break;
     }
 }
-
+iniciarOuPausarBt.addEventListener('click', function()
+    {
+        iniciarOuPausarBt.innerHTML = '<strong> Pausar </strong>';
+    });
 const contagemRegressiva = () =>{
     // iniciar();
-    
-    if(tempoCorridoEmSegundos > 0){
-        console.log('Temporizador: '+tempoCorridoEmSegundos);
-        musicaInicio.play();
-        tempoCorridoEmSegundos -= 1;
+    console.log('Temporizador: '+tempoCorridoEmSegundos);
+    tempoCorridoEmSegundos -= 1;
+    while(EventTarget == 'click');
+    {
+        iniciarOuPausarBt.addEventListener('click', function()
+        {
+            iniciarOuPausarBt.innerHTML = '<strong> Pausar </strong>';
+        });
+    }
+    if(tempoCorridoEmSegundos <= 0){
+        musicaFinal.play();
+        musicaFinal.currentTime = 4;
+        alert('tempo finalizado');
+        zerar();
         return;
     }
-    else
-    zerar();
-    musicaFinal.play();
-    musicaFinal.currentTime = 4;
-    alert('tempo finalizado!');
 }
 startPauseBt.addEventListener('click', iniciarOuPausar);
 
 function iniciarOuPausar(){
     if(intervaloId!=null){
-        zerar();
         musicaPause.play();
+        zerar();
         //console.log(intervaloId);
         return; //return para interromper a execução do código
     }
-intervaloId = setInterval(contagemRegressiva, 1000);
+    musicaInicio.play();
+    /*
+    iniciarOuPausarBt.addEventListener('click', function()
+    {
+    iniciarOuPausarBt.innerHTML = '<strong> Pausar </strong>';
+    });
+    */
+    intervaloId = setInterval(contagemRegressiva, 1000);
 }
 function zerar(){
     clearInterval(intervaloId);
+    iniciarOuPausarBt.innerHTML = '<strong> Começar </strong>';
     intervaloId = null;
 }
