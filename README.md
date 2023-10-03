@@ -27,6 +27,8 @@ Paulo Henrique Ganso: Costuma dormir por um longo período dentro de campo, fico
 * Git
 
 * Vercel
+
+* Figma
 ## Feito por:
 
 ### <b>Vinnicius Oliveira Rodrigues</b>
