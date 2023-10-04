@@ -10,7 +10,7 @@
     const temporizador = document.getElementById('timer');
     const musicaFocoInput = document.getElementById('alternar-musica');
     const musica = new Audio('./sons/luna-rise-part-one.mp3');
-    let tempoCorridoEmSegundos = 600;
+    let tempoCorridoEmSegundos = 25*60;
     const startPauseBt = document.getElementById('start-pause');
     let intervaloId = null;
     musica.loop = true;
