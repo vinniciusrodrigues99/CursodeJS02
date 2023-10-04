@@ -31,21 +31,21 @@
     {
     //  html.setAttribute('data-contexto', 'foco');
         //banner.setAttribute('src', './imagens/foco.png');
-        tempoCorridoEmSegundos = 600;
+        tempoCorridoEmSegundos = 25*60;
         alterarContexto('foco');
         focoBt.classList.add('active')
     });
     curtoBt.addEventListener('click', ()=>{
     //  html.setAttribute('data-contexto', 'descanso-curto');
     // banner.setAttribute('src', './imagens/descanso-curto.png');
-        tempoCorridoEmSegundos = 15 * 60;
+        tempoCorridoEmSegundos = 5 * 60;
         alterarContexto('descanso-curto');
         curtoBt.classList.add('active');
     });
     longoBt.addEventListener('click', function(){
         // html.setAttribute('data-contexto', 'descanso-longo');
         // banner.setAttribute('src', './imagens/descanso-longo.png');
-        tempoCorridoEmSegundos = 30*60; 
+        tempoCorridoEmSegundos = 15*60; 
         alterarContexto('descanso-longo');
         longoBt.classList.add('active');
     });
